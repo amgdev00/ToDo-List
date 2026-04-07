@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- logo -->
+        <header class="logo">
+            <svg class="rocket-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.5C12 2.5 8 6 8 10C8 12.5 9.5 14 12 14C14.5 14 16 12.5 16 10C16 6 12 2.5 12 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 14V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 17H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 20H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="9" r="1.5" fill="currentColor"/>
+            </svg>
+            <span class="logo-text">todo</span>
+        </header>
+
+        <!-- input nova tarefa -->
+        <div class="input-wrapper" >
+            <input type="text" class="task-input" placeholder="Adicione uma nova tarefa" id="inputNewtask">
+        
+        <!-- button criar nova tarefa -->
+            <button onclick="btnCriarTask()" class="create-btn" id="createButton">
+                Criar
+                <svg class="plus-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M12 8V16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- tabs tarefa criada -->
+        <div class="tabs">
+            <div class="tab">
+                <span class="tab-label">Tarefas criadas</span>
+                <span class="badge">5</span>
+            </div>
+        
+        <!-- tab tarefas concluídas -->
+            <div class="tab">
+                <span class="tab-label active">Concluídas</span>
+                <span class="badge">2 de 5</span>
+            </div>
+        </div>
+
+        <!-- lista de tarefas -->
+        <div class="task-list">
+            <!-- task 1 -->
+            
+
+            <!-- task 2 -->
+            <div class="task-item completed">
+                <input type="checkbox" class="task-checkbox" checked>
+                <span class="task-text">Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</span>
+                <button class="delete-btn">
+                    <svg class="trash-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 7H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M10 11V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M14 11V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M7 7L8 19C8 20.1046 8.89543 21 10 21H14C15.1046 21 16 20.1046 16 19L17 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 7V4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </div>
+</body>
+</html>
