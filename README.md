@@ -6,7 +6,8 @@ Aplicação web simples e funcional para gerenciamento de tarefas (To-Do List), 
 
 ## 📸 Preview
 
-<img src="./preview.png" alt="preview do projeto" />
+<img width="713" height="731" alt="ToDoList" src="https://github.com/user-attachments/assets/7abb9de4-b00d-4d5c-aa76-a5e7ca86813a" />
+
 
 ---
 
