@@ -44,4 +44,3 @@ O sistema também permite remover tarefas individualmente.
 │── index.css
 │── index.js
 │── README.md
-# ToDo-List
